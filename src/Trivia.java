@@ -19,12 +19,12 @@ public class Trivia {
     // Initialize the score
     private static int score = 0;
 
+    // TODO: Add one more question about your favorite/least favorite Java topic
+
     public static void main(String[] args) {
-        // Read questions from a csv
-        // TODO: Add one more question regarding your favorite Java topic
-        // TODO: Adapt your program to read the questions from the provided csv file
-        // Hint: the actual functionality is already implemented!
-        // List<TextQuestion> questions = null;
+        // TODO: Read the questions from the provided csv file
+        // Note: The actual functionality is already implemented!
+        List<TextQuestion> questions = ?;
 
         // TODO: initialize a new view
 
@@ -36,11 +36,11 @@ public class Trivia {
 
     private static void updateViewWithQuestion(TriviaView view, TextQuestion question) {
         // TODO: implement this method
-        // The question and answer options need to be set
+        // Hint: The question and answer options need to be set
     }
 
     // Button listeners for checking an answer and displaying the next question
-    // No need to change this method!
+    // NO NEED TO TOUCH THIS METHOD!
     private static void addButtonListeners(List<TextQuestion> questions, TriviaView view) {
         view.addCheckAnswerListener(e -> {
             // Check if an answer has been selected
@@ -74,6 +74,7 @@ public class Trivia {
     }
 
     // Read the questions from a csv file
+    // NO NEED TO TOUCH THIS METHOD!
     public static List<TextQuestion> readQuestionsFromCSV(String filename) {
         List<TextQuestion> questions = new ArrayList<>();
         try (BufferedReader br = new BufferedReader(new FileReader(filename))) {
