@@ -29,6 +29,9 @@ public class TextQuestion implements Question {
     public int score(String answer) {
         // TODO: implement the score method
         // Should return 1 if the answer is correct, otherwise return 0
+        
+        // Hint: You can use answer.charAt(0) to get the first character 
+        // of the answer string
         return 0;
     }
 
